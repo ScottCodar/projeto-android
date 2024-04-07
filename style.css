@@ -3,7 +3,10 @@
 *{
     padding: 0px;
     margin: 0px;
+
 }
+
+
 
 @font-face {
     font-family:'Android';
@@ -32,22 +35,28 @@ header{
 }
 
 header h1{
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-destaque);
     text-align: center;
     font-size: 3em;
     color: white;
     margin: auto;
     padding: 20px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.692);
 }
 
 header p{
+    font-family: var(--fonte-padrao);
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 20px;
     color: white;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.692);
 }
 
 header nav{
+    font-family: var(--fonte-padrao);
     padding-top: 50px;
     text-align: center;
 }
@@ -56,13 +65,14 @@ header nav > a{
     font-weight: bolder;
     text-decoration: none;
     color: white;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 15px;
 }
 
 header nav > a:hover{
     background-color: white;
     color: var(--cor4);
     transition: 0.5s;
+    border-radius: 15px;
 }
 
 body{
@@ -73,7 +83,8 @@ body{
 main{
     background-color: white;
     max-width: 1000px;
-    min-width: 320px;
+    min-width: 300px;
+    text-align: justify;
     
 
     margin: auto;
@@ -84,35 +95,41 @@ main{
 }
 
 main h2{
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-android);
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0), var(--cor1));
     color: var(--cor4);
-    width: 40%;
     font-size: 1.5em;
 
     
 }
 
 main p{
+    margin: 15px 0px;
     font-family: var(--fonte-padrao);
     font-size: 1em;
     padding-bottom: 50px;
-    text-indent: 1.5em;
+    text-indent: 30pxm;
+    line-height: 2em;
 }
 
-
-
-main img{
-    width: 100%;   
-
+main strong{
+    color: var(--cor4);
+    padding: 0px 4px;
 }
+
+main a{
+    background-color: var(--cor1);
+    text-decoration: none;
+}
+
 
 main img.pequena{
-    width: 40%;
-    display: block;
-    margin: auto; 
-
+    max-width: 350px;
+    display: flex;
+    justify-self: center;
+    margin: auto;
 }
+
 
 section > aside{
     background-color: var(--cor2);
@@ -142,11 +159,41 @@ section > aside p{
     
 }
 
+main picture > img{
+    width: 100%;
+    justify-self: center;
+}
+
+
+/*Centralizabndo um vídeo*/
+.video{
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.video iframe{
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 50%;
+    min-width: 100%;
+    height: 680px;
+
+}
+
+.lista{
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.658);
+}
+
+
+
 footer{
     text-align: center;
     color: white;
-    
-
+    font-family: var(--fonte-padrao);
     padding: 10px;
     min-height: 30px;
     background-color: var(--cor5);
