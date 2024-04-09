@@ -108,8 +108,9 @@ main p{
     font-family: var(--fonte-padrao);
     font-size: 1em;
     padding-bottom: 50px;
-    text-indent: 30pxm;
+    text-indent: 30px;
     line-height: 2em;
+
 }
 
 main strong{
@@ -123,9 +124,10 @@ main a{
 }
 
 
-main img.pequena{
+main .pequena{
     max-width: 350px;
     display: flex;
+    align-items: center;
     justify-self: center;
     margin: auto;
 }
